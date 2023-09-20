@@ -49,10 +49,10 @@ def create_pos_view(session):
     location = session.table("RAW_POS.LOCATION").select(F.col("LOCATION_ID"))
 
     
-    '''
-    We can do this one of two ways: either select before the join so it is more explicit, or just join on the full tables.
-    The end result is the same, it's mostly a readibility question.
-    '''
+    
+    #'''
+    #We can do this one of two ways: either select before the join so it is more explicit, or just join on the full tables.
+    #The end result is the same, it's mostly a readibility question.
     # order_detail = session.table("RAW_POS.ORDER_DETAIL")
     # order_header = session.table("RAW_POS.ORDER_HEADER")
     # truck = session.table("RAW_POS.TRUCK")
